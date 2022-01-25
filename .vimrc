@@ -177,11 +177,6 @@ endif
 set showtabline=2
 set noshowmode
 
-"let g:edge_style = 'aura'
-"let g:edge_enable_italic = 0
-"let g:edge_disable_italic_comment = 1
-"colorscheme edge
-
 let g:tokyonight_style = 'night'
 let g:tokyonight_enable_italic = 0
 let g:tokyonight_disable_italic_comment = 1
