@@ -14,8 +14,6 @@ set number
 " Plugins
 call plug#begin('~/.vim/plugged')
 
-Plug 'rust-lang/rust.vim'
-
 Plug 'vim-airline/vim-airline'
 
 Plug 'vim-airline/vim-airline-themes'
@@ -25,7 +23,6 @@ Plug 'edkolev/tmuxline.vim'
 Plug 'tpope/vim-fugitive'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 
 Plug 'sheerun/vim-polyglot'
 
@@ -37,6 +34,8 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install'}
 Plug 'scrooloose/nerdtree'
 
 Plug 'ghifarit53/tokyonight-vim'
+
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
@@ -149,14 +148,15 @@ let mapleader = " "
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gr <Plug>(coc-references)
 nmap <leader>ne :NERDTreeFocus<cr>
-map <leader>bl :Buffer<cr>
+map <leader>bf :Files<cr>
+map <leader>bb :Buffer<cr>
 map <leader>bd :bd<cr>
 
 let g:prettier#exec_cmd_path = "~/.vim/plugged/vim-prettier/node_modules/prettier"
 let g:prettier#config#print_width = 100
 
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
+" let g:airline_powerline_fonts = 1
+" let g:airline#extensions#tabline#enabled = 1
 let g:airline_section_z = airline#section#create(['linenr', '/%3L'])
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#tmuxline#enabled = 0
